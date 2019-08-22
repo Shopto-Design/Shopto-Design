@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit:600&display=swap');
+body{
+  margin: 0px;
+  overflow: hidden;
+}
+textarea, input {
+  border: none;
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+
+}
+.alert{
+border-radius: 30px;
+position: absolute;
+left: 0;
+right: 0;
+bottom: 20px;
+margin-left: auto;
+margin-right: auto;
+width: 300px; /* Need a specific value to work */
+background-color: black;
+color: white;
+font-family: Helvetica;
+text-transform: uppercase;
+text-align: center;
+padding: 1em 1em;
+box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+display: none;
+
+}
+input {
+  margin: 2px;
+  width: 100%;
+  text-align: right;
+}
+
+.maincontainer {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center
+}
+
+.enterbox {
+  align-self: flex-start;
+  font-family: Helvetica;
+  padding: 20px;
+  background-color: #E2E2E2;
+  border: 1px solid darkgrey;
+  height: 100vh;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  overflow: scroll;
+}
+
+
+.inputs {
+  float: left;
+}
+
+
+.inputs span {
+  display: inline-block;
+  font-size: 12px;
+  transform: translateY(-15px);
+}
+
+input,
+textarea {
+  /* border-radius: 2px; */
+  border: 2px solid white;
+  resize: none;
+  text-align: center;
+  line-height: 2;
+  border-radius: 10px;
+}
+
+#description {
+  margin-top: 5px;
+  font-family: Helvetica;
+  width: 100%;
+}
+.maincontainer h2{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Kanit;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  letter-spacing: -1px;
+}
+
+.mainoutput {
+  font-family: Helvetica;
+  height: 100%;
+  width: 100%;
+}
+.mainoutput textarea{
+  width: 100%;
+  height: 100vh;
+  padding: 50px;
+}
+.enterbox button{
+  width: 100%;
+  margin-top: 20px;
+  padding: 1em 4em;
+  border: 0px solid white;
+  font-family: Helvetica;
+  color: white;
+  transition: all 0.2s ease-in-out;
+  border-radius: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+#generate{
+  background-color: #03A9F4;
+}
+#generate:hover{
+  background-color: #0877A9;
+}
+#refresh{
+background-color: #FF0505;
+}
+#refresh:hover{
+background-color: #C30606;
+}
+.upload img{
+height:30px;
+position: absolute;
+top: 20px;
+left: 30px;
+}
